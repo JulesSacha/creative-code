@@ -64,13 +64,13 @@ class FlowFieldEffect {
     }
 
     #drawLine(angle, x, y) {
-        //  let positionX = x;
-        //  let positionY = y;
-        //  let dy = mouse.y - positionY ;
-        //  let dx = mouse.x - positionX ;
-        //  let distance = dx * dx + dy * dy;
+         let positionX = x;
+         let positionY = y;
+         let dy = mouse.y - positionY ;
+         let dx = mouse.x - positionX ;
+         let distance = dx * dx + dy * dy;
 
-        const length =20;
+        const length = distance / 70000;
         this.#ctx.beginPath();
         this.#ctx.moveTo(x, y);
         this.#ctx.lineTo(x + Math.cos(angle) * length, y + Math.sin(angle) * length);
