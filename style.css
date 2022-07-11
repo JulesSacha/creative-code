@@ -6,7 +6,7 @@
 
 canvas{
     position: absolute;
-    background-color: blue;
+    background-image: radial-gradient(circle, #055a40, #00555c, #004c88, #003da7, #0d0097);
     top :0;
     left :0;
 }

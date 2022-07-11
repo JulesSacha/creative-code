@@ -37,7 +37,7 @@ class FlowFieldEffect {
     #height;
     constructor(ctx, width, height) {
         this.#ctx = ctx;
-        this.#ctx.lineWidth = 3;
+        this.#ctx.lineWidth = 1;
         this.#height = height;
         this.#width = width;
         this.lastTime = 0;
@@ -70,7 +70,7 @@ class FlowFieldEffect {
         //  let dx = mouse.x - positionX ;
         //  let distance = dx * dx + dy * dy;
 
-        const length =20;
+        const length =30;
         this.#ctx.beginPath();
         this.#ctx.moveTo(x, y);
         this.#ctx.lineTo(x + Math.cos(angle) * length, y + Math.sin(angle) * length);
@@ -85,7 +85,7 @@ class FlowFieldEffect {
             this.radius += this.vr;
             for (let y = 0; y < this.#height; y += this.cellSize) {
                 for (let x = 0; x < this.#width; x += this.cellSize) {
-                    const angle = (Math.cos(x * 0.01) + Math.sin(y * 0.01)) * this.radius;
+                    const angle = (Math.cos(x * 0.007) + Math.sin(y * 0.007)) * this.radius;
                     this.#drawLine(angle, x, y);
 
                 }

@@ -38,7 +38,11 @@ class FlowFieldEffect {
     constructor(ctx, width, height) {
         this.#ctx = ctx;
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.#ctx.lineWidth = 3;
+=======
+        this.#ctx.lineWidth = 5;
+>>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
 =======
         this.#ctx.lineWidth = 5;
 >>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
@@ -52,7 +56,11 @@ class FlowFieldEffect {
         this.#createGradient();
         this.#ctx.strokeStyle = this.gradient;
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.radius = 0;
+=======
+        this. radius = 0;
+>>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
 =======
         this. radius = 0;
 >>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
@@ -64,7 +72,11 @@ class FlowFieldEffect {
     #createGradient() {
         this.gradient = this.#ctx.createLinearGradient(0, 0, this.#width, this.#height);
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.gradient.addColorStop("0.9", "#ffff33");
+=======
+        this.gradient.addColorStop("0.1", "#ff4c33");
+>>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
 =======
         this.gradient.addColorStop("0.1", "#ff4c33");
 >>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
@@ -77,6 +89,7 @@ class FlowFieldEffect {
 
     #drawLine(angle, x, y) {
 <<<<<<< HEAD
+<<<<<<< HEAD
          let positionX = x;
          let positionY = y;
          let dy = mouse.y - positionY ;
@@ -88,10 +101,15 @@ class FlowFieldEffect {
         this.#ctx.moveTo(x, y);
         this.#ctx.lineTo(x + Math.cos(angle) * length, y + Math.sin(angle) * length);
 =======
+=======
+>>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
         const length = 300;
         this.#ctx.beginPath();
         this.#ctx.moveTo(x, y);
         this.#ctx.lineTo(x + Math.cos(angle) * 30, y + Math.sin(angle) * 30);
+<<<<<<< HEAD
+>>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
+=======
 >>>>>>> 6ac2349c4696392950a0e1e3eb0d01907b2565fb
         this.#ctx.stroke();
     }
