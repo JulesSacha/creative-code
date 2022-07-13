@@ -19,7 +19,7 @@ window.addEventListener('mousemove', function (event) {
 })
 ctx.fillStyle = 'blue';
 ctx.font = '30px Verdana';
-ctx.fillText('JF', 0, 30);
+ctx.fillText('oui', 30, 30);
 const textCoordinate = ctx.getImageData(0, 0, 100, 100);
 
 class Particle {

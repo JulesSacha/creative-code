@@ -27,3 +27,8 @@ button{
     width: 100%;
 }
 
+label, input {
+    color : black;
+    font-size: 15px;
+
+}
